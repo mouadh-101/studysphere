@@ -1,11 +1,13 @@
 import { Router } from 'express';
 import authRoutes from './authRoutes';
+import researchRoutes from './researchRoutes';
 import homeworkRoutes from './homeworkRoutes';
 import noteSummarizerRoutes from './noteSummarizerRoutes';
 import languageRoutes from './languageRoutes';
 const router = Router();
 
 router.use('/auth', authRoutes);
+router.use('/research', researchRoutes);
 router.use('/homework', homeworkRoutes);
 router.use('/notes', noteSummarizerRoutes);
 router.use('/language', languageRoutes);
