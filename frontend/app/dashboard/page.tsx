@@ -9,10 +9,10 @@ import Link from "next/link"
 
 export default function DashboardPage() {
   const { user } = useAuth()
- // const [stats, setStats] = useState<UserStats | null>(null)
+  //const [stats, setStats] = useState<UserStats | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-/*
+
   useEffect(() => {
     loadStats()
   }, [])
@@ -39,7 +39,7 @@ export default function DashboardPage() {
         <p className="text-muted-foreground mt-1">Here's what's happening with your studies today.</p>
       </div>
 
-      {/* Stats 
+      {/* Stats */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {loading ? (
           <>
@@ -188,7 +188,7 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      {/* Recent Activity 
+      {/* Recent Activity */}
       <div>
         <h2 className="text-xl font-semibold mb-4">Recent Activity</h2>
         <Card>
@@ -263,5 +263,6 @@ export default function DashboardPage() {
         </Card>
       </div>*/}
     </div>
+    
   )
 }
