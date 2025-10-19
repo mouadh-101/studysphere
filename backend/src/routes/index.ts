@@ -1,10 +1,10 @@
 import { Router } from 'express';
 import authRoutes from './authRoutes';
-
-
+import noteSummarizerRoutes from './noteSummarizerRoutes';
 const router = Router();
 
 router.use('/auth', authRoutes);
+router.use('/notes', noteSummarizerRoutes);
 
 
 // Health check route
