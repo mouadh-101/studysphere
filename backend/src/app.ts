@@ -16,10 +16,10 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(helmet({
-  crossOriginResourcePolicy: { policy: "cross-origin" }, // Allow cross-origin resource loading
+  crossOriginResourcePolicy: { policy: "cross-origin" }, // Allow cross-origin resource loading 
 }));
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:3000',
+  origin: 'http://localhost:3000',
   credentials: true,
 }));
 app.use(morgan('combined'));

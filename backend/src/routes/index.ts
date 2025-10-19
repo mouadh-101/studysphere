@@ -1,10 +1,11 @@
 import { Router } from 'express';
 import authRoutes from './authRoutes';
-
+import resourceRoutes from './resourceRoutes'
 
 const router = Router();
 
 router.use('/auth', authRoutes);
+router.use('/resources', resourceRoutes);
 
 
 // Health check route
