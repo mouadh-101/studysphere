@@ -1,9 +1,11 @@
 import { Router } from 'express';
 import authRoutes from './authRoutes';
+import homeworkRoutes from './homeworkRoutes';
 import noteSummarizerRoutes from './noteSummarizerRoutes';
 const router = Router();
 
 router.use('/auth', authRoutes);
+router.use('/homework', homeworkRoutes);
 router.use('/notes', noteSummarizerRoutes);
 
 
